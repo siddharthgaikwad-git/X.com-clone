@@ -10,16 +10,16 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./css/output.css">
+</head>
 
-<body class=" bg-black text-white">
-    <div class="flex container mx-auto ">
+<body class="bg-black text-white overflow-x-hidden">
+    <div class="flex container mx-auto">
 
+        <!-- First Column: Sidebar -->
         <div class="first w-[1%] md:w-[25%] xs:w-[12%]">
 
-
-
             <div class="sidebar flex items-start flex-col sticky top-0">
-                <div class="logo invert my-4 px-5 ">
+                <div class="logo invert my-4 px-5">
                     <svg viewBox="0 0 24 24" aria-hidden="true"
                         class="m-auto w-4 sm:w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
                         <g>
@@ -30,10 +30,7 @@
                     </svg>
                 </div>
 
-
-
-
-                <ul class="hidden sm:flex flex-col text-lg space-y-1 px-1 font-bold ">
+                <ul class="hidden sm:flex flex-col text-lg space-y-1 px-1 font-bold">
                     <li
                         class="flex justify-start items-center w-fit px-2 hover:bg-[rgb(24,24,24)] hover:cursor-pointer py-0 hover:rounded-full">
                         <span class="material-symbols-outlined text-3xl w-12 h-12 flex items-center justify-center rounded-full
@@ -94,7 +91,6 @@
                             <a href="" class="cursor-pointer block xl:hidden">
                                 <svg width="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="12" cy="12" r="11.5" fill="#EFF3F4" />
-
                                     <g transform="scale(0.6)" transform-origin="center">
                                         <path
                                             d="M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z"
@@ -106,36 +102,25 @@
                                 class="hidden xl:block bg-[#1d9bf0] px-16 text-lg rounded-full py-3 text-white">Post</button>
                         </div>
                     </li>
-
-
-
                 </ul>
 
-                <div class="userprofile w-full mt-4  hover:bg-[#101010] hover:rounded-3xl hidden sm:block">
-                    <div class="item  items-center justify-center mx-5 flex
-                         cursor-pointer w-fit">
-
+                <div class="userprofile w-full mt-4 hover:bg-[#101010] hover:rounded-3xl hidden sm:block">
+                    <div class="item items-center justify-center mx-5 flex cursor-pointer w-fit">
                         <div class="p1"><img class="w-13 h-13 md:w-12 md:h-10 sm:w-12 sm:h-10 rounded-full"
                                 src="https://pbs.twimg.com/profile_images/1776081896398589952/r-eB7JR3_bigger.jpg"
-                                alt="Siddharth Gaikwad" ></div>
+                                alt="Siddharth Gaikwad"></div>
                         <div class="p2 hidden xl:block">
-                            <div>Siddharth Gaik... <span class="material-symbols-outlined text-base">lock</span></div>
-
-                            <div class="text-gray-500">@SiddharthG8010</div>
+                            <div class="text-xs">Siddharth Gaik... <span class="material-symbols-outlined text-base">lock</span></div>
+                            <div class="text-sm text-gray-500">@SiddharthG8010</div>
                         </div>
-
-
-
                     </div>
                 </div>
-
 
             </div>
         </div>
 
-
-        <div class="second flex-1 max-w-[600px] border-[1px] border-x-[#2F3336] border-y-black">
-
+        <!-- Second Column: Feed -->
+        <div class="second flex-1 max-w-[600px] border-[1px] border-x-[#2F3336] border-y-black min-w-0">
 
             <div
                 class="top flex p-3 sticky top-0 bg-black bg-transparent backdrop-blur-3xl opacity-1 border-b border-gray-500">
@@ -143,12 +128,6 @@
                 <div class="left w-1/2 flex justify-center font-bold">For You</div>
                 <div class="right w-1/2 flex justify-center font-bold">Following</div>
             </div>
-
-
-
-
-
-
 
             <div class="whatishapp flex">
                 <div class="img m-2">
@@ -159,48 +138,34 @@
                     <input class="w-full h-9 my-4 bg-black text-white outline-none text-xl" type="text"
                         placeholder="Whats Happening?">
                     <div class="text-[#1d9bf0] flex items-center gap-1">
-                        <span class="material-symbols-outlined text-lg">
-                            globe
-                        </span>
+                        <span class="material-symbols-outlined text-lg">globe</span>
                         <span class="font-bold text-sm">Everyone can replay</span>
                     </div>
                     <div class="h-[1px] w-full bg-[#2F3336] my-3"></div>
                     <div class="flex justify-between">
-                        <div class="blueicons flex gap-2 ">
-                            <span
-                                class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">imagesmode</span>
-                            <span
-                                class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">gif_box</span>
-                            <span
-                                class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">explore</span>
-                            <span
-                                class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">ballot</span>
-                            <span
-                                class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">mood</span>
-                            <span
-                                class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">calendar_clock</span>
-                            <span
-                                class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">location_on</span>
-                            <span
-                                class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">flag_2</span>
-
+                        <div class="blueicons flex gap-2">
+                            <span class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">imagesmode</span>
+                            <span class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">gif_box</span>
+                            <span class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">explore</span>
+                            <span class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">ballot</span>
+                            <span class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">mood</span>
+                            <span class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">calendar_clock</span>
+                            <span class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">location_on</span>
+                            <span class="material-symbols-outlined cursor-pointer text-[#1d9bf0] text-sm xs:text-base">flag_2</span>
                         </div>
                         <div class="postbtn">
                             <button
-                                class="bg-[#787a7a] px-3 sm:px-6 text-xs rounded-full py-2 text-black font-bold sm:text-base ">Post</button>
+                                class="bg-[#787a7a] px-3 sm:px-6 text-xs rounded-full py-2 text-black font-bold sm:text-base">Post</button>
                         </div>
                     </div>
-
                 </div>
-
             </div>
 
-
-
-            <div class="h-[1px] w-full bg-[#2F3336]  flex justify-center "></div>
+            <div class="h-[1px] w-full bg-[#2F3336] flex justify-center"></div>
             <div class="h-12 py-3 flex justify-center hover:cursor-pointer hover:bg-[#101010]">
-                <span class=" text-[#1d9bf0]">Show 1,715 posts</span>
+                <span class="text-[#1d9bf0]">Show 1,715 posts</span>
             </div>
+
             <div class="posts hover:bg-[#101010] cursor-pointer">
                 <div class="h-[1px] w-full bg-[#2F3336]"></div>
                 <div class="post flex">
@@ -210,13 +175,11 @@
                     </div>
                     <div class="containt mx-2 my-2">
                         <span class="font-bold hover:underline cursor-pointer">vivo India </span> <span
-                            class=" material-symbols-outlined text-yellow-500 text-xl">verified </span>
+                            class="material-symbols-outlined text-yellow-500 text-xl">verified </span>
                         <span class="text-[#71767b]"> @Vivo_India · Apr 3</span>
                         <div>
                             <p>The ultimate powerhouse.. Loading….</p>
-
                             <p>vivo T5 Pro coming soon.</p>
-
                             <p> Search now on Flipkart to know more.</p>
                         </div>
                         <div class="postingimg w-[60%] mt-3">
@@ -226,31 +189,26 @@
                         </div>
 
                         <div class="icons mt-5 flex justify-around text-[#71767b]">
-                            <div class="flex space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1.5 ">
+                            <div class="flex space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1.5">
                                 <span class="material-symbols-outlined text-lg">chat</span>
                                 <span>7</span>
                             </div>
-                            <div class="flex items-center space-x-1  hover:text-[#00ba7c]  hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1">
-                                <span class="material-symbols-outlined text-lg ">repeat</span>
+                            <div class="flex items-center space-x-1 hover:text-[#00ba7c] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1">
+                                <span class="material-symbols-outlined text-lg">repeat</span>
                                 <span>11</span>
                             </div>
-                            <div class="flex items-center space-x-1 hover:text-[#f91880]  hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1">
-                                <span class="material-symbols-outlined text-lg ">favorite</span>
+                            <div class="flex items-center space-x-1 hover:text-[#f91880] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1">
+                                <span class="material-symbols-outlined text-lg">favorite</span>
                                 <span>100</span>
                             </div>
-                            <div class="flex items-center space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1 ">
-                                <span class="material-symbols-outlined text-lg ">bar_chart</span>
+                            <div class="flex items-center space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1">
+                                <span class="material-symbols-outlined text-lg">bar_chart</span>
                                 <span>3.7k</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
 
             <div class="posts hover:bg-[#101010] cursor-pointer">
                 <div class="h-[1px] w-full bg-[#2F3336]"></div>
@@ -279,35 +237,27 @@
                         </div>
 
                         <div class="icons mt-5 flex justify-around text-[#71767b]">
-                            <div class="flex space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1.5 ">
+                            <div class="flex space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1.5">
                                 <span class="material-symbols-outlined text-lg">chat</span>
                                 <span>1</span>
                             </div>
-                            <div class="flex items-center space-x-1  hover:text-[#00ba7c]  hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1">
+                            <div class="flex items-center space-x-1 hover:text-[#00ba7c] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1">
                                 <span class="material-symbols-outlined text-lg">repeat</span>
-
-
                                 <span>7</span>
                             </div>
-                            <div class="flex items-center space-x-1 hover:text-[#f91880]  hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1">
-                                <span class="material-symbols-outlined text-lg ">favorite</span>
+                            <div class="flex items-center space-x-1 hover:text-[#f91880] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1">
+                                <span class="material-symbols-outlined text-lg">favorite</span>
                                 <span>110</span>
                             </div>
-                            <div class="flex items-center space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1 ">
-                                <span class="material-symbols-outlined text-lg ">bar_chart</span>
-
+                            <div class="flex items-center space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1">
+                                <span class="material-symbols-outlined text-lg">bar_chart</span>
                                 <span>5k</span>
-
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
+
             <div class="posts cursor-pointer hover:bg-[#101010]">
                 <div class="h-[1px] w-full bg-[#2F3336]"></div>
                 <div class="post flex">
@@ -318,7 +268,7 @@
                     <div class="containt mx-2 my-2">
                         <span class="font-bold hover:underline cursor-pointer">Elon Musk</span> <span
                             class="material-symbols-outlined text-yellow-500 text-xl">verified </span><span
-                            class=" ml-1 material-symbols-outlined border-[0.1px] rounded-md border-[#2F3336] text-sm ">
+                            class="ml-1 material-symbols-outlined border-[0.1px] rounded-md border-[#2F3336] text-sm">
                             close</span>
                         <span class="text-[#71767b]"> @elonmusk · 18h</span>
                         <div>
@@ -332,7 +282,6 @@
                                         src="https://pbs.twimg.com/profile_images/1876785200010539008/2_HFJjq9_normal.jpg"
                                         alt="XFreeze">
                                 </div>
-
                                 <div class="container mt-1">
                                     <span class="font-bold hover:underline cursor-pointer text-white">XFreeze</span>
                                     <span class="material-symbols-outlined text-blue-600 text-xl">verified</span>
@@ -351,45 +300,32 @@
                                 <img class="w-full"
                                     src="https://pbs.twimg.com/media/HFJnzM3X0AAGFJC?format=png&name=900x900" alt="Posting Image">
                             </div>
-
-
                         </div>
 
                         <div class="icons mt-5 flex justify-around text-[#71767b]">
-                            <div class="flex space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1.5 ">
+                            <div class="flex space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1.5">
                                 <span class="material-symbols-outlined text-lg">chat</span>
                                 <span>2.2k</span>
                             </div>
-                            <div class="flex items-center space-x-1  hover:text-[#00ba7c]  hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1">
+                            <div class="flex items-center space-x-1 hover:text-[#00ba7c] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1">
                                 <span class="material-symbols-outlined text-lg transform">repeat</span>
                                 <span>4K</span>
                             </div>
-                            <div class="flex items-center space-x-1 hover:text-[#f91880]  hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1">
-                                <span class="material-symbols-outlined text-lg ">favorite</span>
+                            <div class="flex items-center space-x-1 hover:text-[#f91880] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1">
+                                <span class="material-symbols-outlined text-lg">favorite</span>
                                 <span>17k</span>
                             </div>
-                            <div class="flex items-center space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1 ">
-                                <span class="material-symbols-outlined text-lg ">bar_chart</span>
-
+                            <div class="flex items-center space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1">
+                                <span class="material-symbols-outlined text-lg">bar_chart</span>
                                 <span>6.4M</span>
-
                             </div>
                         </div>
-
-
                     </div>
                 </div>
                 <div class="h-[1px] w-full bg-[#2F3336]"></div>
             </div>
 
-
-
-            <div class="posts hover:bg-[#101010] cursor-pointer ">
-
+            <div class="posts hover:bg-[#101010] cursor-pointer">
                 <div class="post flex">
                     <div class="image m-4 mr-0">
                         <img class="rounded-full w-20"
@@ -403,9 +339,7 @@
                             <p>Vivo V70 FE vs Realme 16 Pro: big battery, 200MP cameras, stylish design—
                                 which phone does it better?</p>
                             <br>
-
                             <p>Key Differences:</p>
-
                             <p>💰Realme 16 Pro starts at Rs 35,999, undercutting Vivo's Rs 37,999.
                                 <br>
                                 🤖Vivo V70 FE offers 4 yrs OS & 6 yrs security updates (more than Realme's
@@ -420,65 +354,137 @@
                         </div>
 
                         <div class="icons mt-5 flex justify-around text-[#71767b]">
-                            <div class="flex space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1.5 ">
+                            <div class="flex space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1.5">
                                 <span class="material-symbols-outlined text-lg">chat</span>
                                 <span>2</span>
                             </div>
-                            <div class="flex items-center space-x-1  hover:text-[#00ba7c]  hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1">
+                            <div class="flex items-center space-x-1 hover:text-[#00ba7c] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1">
                                 <span class="material-symbols-outlined text-lg transform">repeat</span>
                                 <span>7</span>
                             </div>
-                            <div class="flex items-center space-x-1 hover:text-[#f91880]  hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1">
-                                <span class="material-symbols-outlined text-lg ">favorite</span>
+                            <div class="flex items-center space-x-1 hover:text-[#f91880] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1">
+                                <span class="material-symbols-outlined text-lg">favorite</span>
                                 <span>37</span>
                             </div>
-                            <div class="flex items-center space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] 
-                            hover:cursor-pointer hover:rounded-full p-1 ">
-                                <span class="material-symbols-outlined text-lg ">bar_chart</span>
-
+                            <div class="flex items-center space-x-1 hover:text-[#1a84cc] hover:bg-[#0a171f] hover:cursor-pointer hover:rounded-full p-1">
+                                <span class="material-symbols-outlined text-lg">bar_chart</span>
                                 <span>2.1k</span>
-
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-
-
         </div>
 
-
-
-
+        <!-- Third Column: Trends & Follows -->
         <div class="third w-[350px] px-3 shrink-0 hidden lg:block">
             <div
                 class="search my-3 border border-[#2F3336] rounded-full w-full sticky top-0 bg-black backdrop-blur-3xl opacity-9">
                 <input type="text" class="w-full rounded-full bg-black text-white px-4 py-2" placeholder="Search">
             </div>
-            <div class="premimum mb-4 text-white border border-[#2F3336] rounded-xl p-5 w-full">
+            <div class="premimum my-3 mb-4 text-white border border-[#2F3336] rounded-xl p-5 w-full">
                 <h1 class="font-bold text-lg">Subscribe to Premium <span
                         class="bg-green-900 text-[#61d6a3] text-base font-medium rounded-lg p-0.5 px-2">50% off</span>
                 </h1>
                 <p>Get rid of ads, see your analytics, boost your replies and unlock 20+ features.</p>
                 <button class="mt-5 bg-[#1D9BF0] rounded-full font-bold px-6 py-2">Subscribe</button>
             </div>
-            <div class="whats mb-4 w-full py-5 border border-[#2F3336] rounded-xl">
+            
+            <!-- Whats Happening (Restored) -->
+            <div class="whats my-3 mb-4 w-full py-5 border border-[#2F3336] rounded-xl">
                 <h1 class="text-xl font-bold px-4">Whats Happening</h1>
-                <!-- ट्रेंड्स -->
+                <div class="item px-4 my-3 hover:bg-[#080808] cursor-pointer">
+                    <div class="font-normal text-base text-[#71767b]">Trending in India</div>
+                    <div class="font-bold">Claude AI</div>
+                </div>
+                <div class="item px-4 my-3 hover:bg-[#080808] cursor-pointer">
+                    <div class="font-normal text-base text-[#71767b]">Trending</div>
+                    <div class="font-bold">Thalapathy</div>
+                </div>
+                <div class="item px-4 my-3 hover:bg-[#080808] cursor-pointer">
+                    <div class="font-normal text-base text-[#71767b]">Trending</div>
+                    <div class="font-bold">#DacoitOnApril1Oth</div>
+                </div>
             </div>
-            <div class="who text-white mb-4 w-full pt-5 border border-[#2F3336] rounded-xl">
+
+            <!-- Who to follow (Restored) -->
+            <div class="who text-white my-3 mb-4 w-full pt-5 border border-[#2F3336] rounded-xl">
                 <h1 class="text-xl font-bold px-4">Who to follow</h1>
-                <!-- फॉलोअर्स -->
+                <ul>
+                    <li class="flex items-center justify-between px-4 py-3 hover:cursor-pointer hover:bg-[#101010]">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10"> <img
+                                    src="https://tse1.mm.bing.net/th/id/OIP.qtx9Xej31sGmWHKLM8VDNwHaHk?rs=1&pid=ImgDetMain&o=7&rm=3"
+                                    alt="Microsoft">
+                            </div>
+                            <div>
+                                <a href="#" class="text-base font-bold text-white hover:underline">Microsoft 
+                                    <sub class="material-symbols-outlined text-yellow-500">verified</sub></a>
+                                <p class="text-base text-gray-500">@SharePoint</p>
+                            </div>
+                        </div>
+                        <button
+                            class="px-4 py-1.5 text-sm font-medium bg-white text-black border rounded-full hover:bg-[#d7dbdc]">
+                            Follow
+                        </button>
+                    </li>
+                    <li class="flex items-center justify-between px-4 py-3 hover:cursor-pointer hover:bg-[#101010]">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10"> <img
+                                    src="https://tse2.mm.bing.net/th/id/OIP.3uAHGghWw-gG7kWmC24t9gHaFo?rs=1&pid=ImgDetMain&o=7&rm=3"
+                                    alt="iQOO">
+                            </div>
+                            <div>
+                                <a href="#" class="text-base font-bold text-white hover:underline">iQOO India
+                                    <sub class="material-symbols-outlined text-yellow-500">verified</sub></a>
+                                <p class="text-base text-gray-500">@IqooInd</p>
+                            </div>
+                        </div>
+                        <button
+                            class="px-4 py-1.5 text-sm font-medium bg-white text-black border rounded-full hover:bg-[#d7dbdc]">
+                            Follow
+                        </button>
+                    </li>
+                    <li class="flex items-center justify-between px-4 py-3 hover:cursor-pointer hover:bg-[#101010]">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10"> <img class="rounded-full"
+                                    src="https://pbs.twimg.com/profile_images/661679787799265280/BokwoEaG_x96.png"
+                                    alt="Android Central">
+                            </div>
+                            <div>
+                                <a href="#" class="text-base font-bold text-white hover:underline">Android 
+                                    <sub class="material-symbols-outlined text-blue-600">verified</sub></a>
+                                <p class="text-base text-gray-500">@androidcentral</p>
+                            </div>
+                        </div>
+                        <button
+                            class="px-4 py-1.5 text-sm font-medium bg-white text-black border rounded-full hover:bg-[#d7dbdc]">
+                            Follow
+                        </button>
+                    </li>
+                    <div class="px-4 py-6 hover:cursor-pointer hover:bg-[#101010]">
+                        <a href="#" class="text-base text-[#1d9bf0]">Show more</a>
+                    </div>
+                </ul>
+            </div>
+
+            <!-- Footer Terms (Restored) -->
+            <div class="terms ml-4 text-[#787a7a] w-64 pb-8">
+                <span class="cursor-pointer mr-2 hover:underline text-xs"> Terms of Service</span>
+                <span class="cursor-pointer mr-2 hover:underline text-xs"> <span class="mr-2">|</span> Privacy
+                    Policy</span>
+                <span class="cursor-pointer mr-2 hover:underline text-xs"> <span class="mr-2">|</span> Cookie
+                    Policy</span>
+                <span class="cursor-pointer mr-2 hover:underline text-xs"> <span class="mr-2">|</span>
+                    Accessibility</span>
+                <span class="cursor-pointer mr-2 hover:underline text-xs"> <span class="mr-2">|</span> Ads info</span>
+                <span class="cursor-pointer mr-2 hover:underline text-xs"> <span class="mr-2">|</span> More</span>
+                <span class="cursor-pointer mr-2 hover:underline text-xs"> © 2026 X Corp.</span>
             </div>
         </div>
+
     </div>
-
-
 </body>
 
 </html>
